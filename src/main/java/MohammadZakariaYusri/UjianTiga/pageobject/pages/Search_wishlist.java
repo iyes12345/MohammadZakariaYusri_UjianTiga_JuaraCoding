@@ -4,14 +4,13 @@ import MohammadZakariaYusri.UjianTiga.pageobject.drivers.DriverSingleton;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
-public class Search {
+public class Search_wishlist {
     private WebDriver driver;
     private String JavascriptExecutor;
     int detik = 1;
 
-    public Search() {
+    public Search_wishlist() {
         this.driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }
@@ -30,10 +29,10 @@ public class Search {
     WebElement inputsearch;
 
     @FindBy(xpath = "//*[@id=\"product-1184\"]/div[1]/div[2]/div[2]/div/a")
-    WebElement buttonwhistlistone;
+    WebElement buttonwishlisttone;
 
     @FindBy(xpath = "//div[contains(@class,'related products')]//div[2]//div[1]//div[1]//div[1]//div[2]//div[1]//a[1]")
-    WebElement buttonwhistlisttwo;
+    WebElement buttonwishlisttwo;
 
 
     public void searchform() {
@@ -46,14 +45,14 @@ public class Search {
         JavascriptExecutor js2 = (JavascriptExecutor) driver;
         js2.executeScript("window.scrollBy(0,600)");
         delay(detik);
-        buttonwhistlistone.click();
+        buttonwishlisttone.click();
         delay(detik);
 
         JavascriptExecutor js3 = (JavascriptExecutor) driver;
         js3.executeScript("window.scrollBy(0,1500)");
 
         delay(detik);
-        buttonwhistlisttwo.click();
+        buttonwishlisttwo.click();
         delay(detik);
 
         driver.get("https://shop.demoqa.com/wishlist/");

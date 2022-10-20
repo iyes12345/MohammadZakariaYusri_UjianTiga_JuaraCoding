@@ -1,8 +1,7 @@
 package MohammadZakariaYusri.UjianTiga;
 
 import MohammadZakariaYusri.UjianTiga.pageobject.drivers.DriverSingleton;
-import MohammadZakariaYusri.UjianTiga.pageobject.pages.Search;
-import MohammadZakariaYusri.UjianTiga.pageobject.pages.WebTables;
+import MohammadZakariaYusri.UjianTiga.pageobject.pages.Search_wishlist;
 import MohammadZakariaYusri.UjianTiga.pageobject.util.Constants;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +17,7 @@ public class MainApp {
         /*WebTables webTables = new WebTables();
         webTables.registerForm();*/
 
-        Search search = new Search();
+        Search_wishlist search = new Search_wishlist();
         search.searchform();
 
     }
