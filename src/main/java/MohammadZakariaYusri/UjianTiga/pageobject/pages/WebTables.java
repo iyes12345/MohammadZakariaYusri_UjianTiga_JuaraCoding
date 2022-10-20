@@ -78,6 +78,7 @@ public class WebTables {
         //user input register dan login
         reg_username.sendKeys("dummyaccount");
         delay(detik);
+
         reg_email.sendKeys("dummy2225079@gmail.com");
         delay(detik);
         reg_password.sendKeys("Dummy12345$");
@@ -96,7 +97,6 @@ public class WebTables {
         login.click();
 
         driver.get("https://shop.demoqa.com");
-
 
         JavascriptExecutor js1 = (JavascriptExecutor) driver;
         js1.executeScript("window.scrollBy(0,1100)");
