@@ -7,7 +7,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class MainApp {
-
     public static void main(String[] args) {
         DriverSingleton.getInstance(Constants.CHROME);
         WebDriver driver = DriverSingleton.getDriver();
